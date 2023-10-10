@@ -1,10 +1,7 @@
-"use client";
-
 import Image from "next/image";
 import styles from "./writePage.module.css";
 import { useEffect, useState } from "react";
-import "react-quill/dist/quill.bubble.css";
-import { useRouter } from "next/navigation";
+import { useRouter } from "next/router"; // Fixed the import path for useRouter
 import { useSession } from "next-auth/react";
 import {
   getStorage,
@@ -13,7 +10,13 @@ import {
   getDownloadURL,
 } from "firebase/storage";
 import { app } from "@/utils/firebase";
-import ReactQuill from "react-quill";
+
+// Dynamically import ReactQuill to avoid SSR issues
+import dynamic from 'next/dynamic';
+const ReactQuill = dynamic(() => import('react-quill'), {
+  ssr: false,
+  loading: () => <p>Loading editor...</p>
+});
 
 const WritePage = () => {
   const { status } = useSession();
