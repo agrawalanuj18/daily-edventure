@@ -17,7 +17,7 @@ import ReactQuill from "react-quill";
 
 const WritePage = () => {
   const { status } = useSession();
-  const ReactQuill = Dynamic(() => import('react-quill'), {ssr: false})};
+  const ReactQuill = Dynamic(() => import('react-quill'), {ssr: false});
   const router = useRouter();
 
   const [open, setOpen] = useState(false);
