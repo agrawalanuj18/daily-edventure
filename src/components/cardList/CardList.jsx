@@ -6,7 +6,7 @@ import Card from "../card/Card";
 
 const getData = async (page, cat) => {
   const res = await fetch(
-    `https://daily-edventure-git-main-agrawalanuj18.vercel.app/api/posts?page=${page}&cat=${cat || ""}`,
+    `https://dailyedventure.com//api/posts?page=${page}&cat=${cat || ""}`,
     {
       cache: "no-store",
     }
