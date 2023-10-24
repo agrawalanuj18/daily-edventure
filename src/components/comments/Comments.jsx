@@ -24,7 +24,7 @@ const Comments = ({ postSlug }) => {
   const { status } = useSession();
 
   const { data, mutate, isLoading } = useSWR(
-    `https://daily-edventure-git-main-agrawalanuj18.vercel.app/api/comments?postSlug=${postSlug}`,
+    `https://dailyedventure.com/api/comments?postSlug=${postSlug}`,
     fetcher
   );
 
