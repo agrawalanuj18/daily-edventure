@@ -5,7 +5,7 @@ import Image from "next/image";
 
 const CategoryList = ({ data }) => {
   if (!Array.isArray(data)) {
-    return <div>Error: Data is not available</div>;
+    return <div></div>;
   }
 
   return (
