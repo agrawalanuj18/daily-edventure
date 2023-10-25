@@ -10,17 +10,14 @@ const Featured = () => {
       </h1>
       <div className={styles.post}>
         <div className={styles.imgContainer}>
-          <Image src="/p1.jpeg" alt="" fill className={styles.image} />
+          <Image src="/p1.png" alt="" fill className={styles.image} />
         </div>
         <div className={styles.textContainer}>
-          <h1 className={styles.postTitle}>Lorem ipsum dolor sit amet alim consectetur adipisicing elit.</h1>
+          <h1 className={styles.postTitle}>Daily Edventure - The Blogging Website</h1>
           <p className={styles.postDesc}>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-            Cupiditate, quam nisi magni ea laborum inventore voluptatum
-            laudantium repellat ducimus unde aspernatur fuga. Quo, accusantium
-            quisquam! Harum unde sit culpa debitis.
+          Where education meets adventure. At Daily Edventure, we believe learning is a thrilling journey. Delve into enlightening articles, riveting tales, and thought-provoking insights that make every day an educational escapade. Your quest for knowledge just got more exciting.
           </p>
-          <button className={styles.button}>Read More</button>
+          {/* <button className={styles.button}>Read More</button> */}
         </div>
       </div>
     </div>
