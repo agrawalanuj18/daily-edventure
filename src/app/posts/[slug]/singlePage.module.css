@@ -23,6 +23,8 @@
   width: 50px;
   height: 50px;
   position: relative;
+  display: none; 
+  /* baad me user name laana ho toh display styling remove karna hai  */
 }
 
 .avatar {
@@ -35,6 +37,7 @@
   flex-direction: column;
   gap: 5px;
   color: var(--softTextColor);
+  display: none; /* baad me user name laana ho toh display styling remove karna hai  */
 }
 
 .username {
@@ -79,7 +82,15 @@
   }
 }
 @media screen and (max-width: 1024px) {
-  .imageContainer {
+  .infoContainer 
+    {
+   display: block;
+  }
+
+  .userTextContainer{
+    display: none;
+  }
+  .userImageContainer{
     display: none;
   }
 }
